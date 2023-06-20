@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "60e740a0-7e78-464a-b574-743a03b1ae44",
+		"name": "OpenBootcampSpring1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"title\": \"EL Hombre Rebelde\",\r\n    \"author\": \"Camus\",\r\n    \"pages\": 355,\r\n    \"price\": 60.99,\r\n    \"relaseDate\": \"1953-06-21\",\r\n    \"online\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url1}}/api/books",
+					"host": [
+						"{{url1}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post api/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"EL Hombre Rebelde\",\r\n    \"author\": \"Camus\",\r\n    \"pages\": 355,\r\n    \"price\": 60.99,\r\n    \"relaseDate\": \"1953-06-21\",\r\n    \"online\": false\r\n}"
+				},
+				"url": {
+					"raw": "{{url1}}/api/books",
+					"host": [
+						"{{url1}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAll",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url1",
+			"value": "http://localhost:8081",
+			"type": "default"
+		}
+	]
+}
